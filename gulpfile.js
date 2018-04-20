@@ -59,10 +59,12 @@ gulp.task('nodemon', function (cb) {
             cb();
             started = true;
         }
+    }).on('restart', function () {
+        console.log('Application was restarted!')
     }).on('crash', function () {
         console.error('Application has crashed!\n');
+        stream.emit('restart', 10) // restart the server in 10 seconds
     })
-
 });
 
 function onError(err) {
