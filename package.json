@@ -14,6 +14,7 @@
     "express": "~4.15.5",
     "express-path": "^0.3.8",
     "fs": "0.0.1-security",
+    "helmet": "^3.12.0",
     "include-all": "^4.0.3",
     "ioredis": "^3.2.2",
     "jsonwebtoken": "^8.2.1",

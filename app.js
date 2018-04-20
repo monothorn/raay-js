@@ -19,6 +19,9 @@ if (process.env.NODE_ENV !== 'production') {
     app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 }
 
+var helmet = require('helmet')
+app.use(helmet())
+
 app.use(function (req, res, next) {
     log.info("Request Received: %s %s", req.method, req.url);
     req.log = log;
@@ -50,5 +53,6 @@ app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.send({status_code: err.status, message: err.message, data: null});
 });
+
 
 module.exports = app;
