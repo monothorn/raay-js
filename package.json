@@ -1,0 +1,39 @@
+{
+  "name": "dockex",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "express-path": "^0.3.8",
+    "fs": "0.0.1-security",
+    "include-all": "^4.0.3",
+    "ioredis": "^3.2.2",
+    "jsonwebtoken": "^8.2.1",
+    "lodash": "^4.17.5",
+    "mysql2": "^1.5.3",
+    "node-frame-errors": "^1.0.0",
+    "request": "^2.85.0",
+    "sequelize": "^4.37.4",
+    "swagger-ui-express": "^3.0.6",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "cli-color": "^1.2.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.1",
+    "shelljs": "^0.8.1"
+  }
+}
